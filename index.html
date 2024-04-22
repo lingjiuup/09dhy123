@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>零玖导航站</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  .categories {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .category {
+    margin-bottom: 10px;
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  li {
+    margin-bottom: 10px;
+  }
+
+  a {
+    display: block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+
+  a:hover {
+    background-color: #0056b3;
+  }
+  div[style="text-align: center;"] {
+    display: none;
+  }
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
+    text-align: center;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  input[type="text"] {
+    width: calc(100% - 120px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+
+  button:hover {
+    background-color: #0056b3;
+  }
+</style>
+</head>
+<body>
+  <div class="container">
+    <h1>零玖导航站</h1>
+    <h2>内部站</h2>
+    <ul>
+      <li><a href="http://blog.a456.top">零玖分享站</a></li>
+      <li><a href="http://09zyz.ysepan.com">零玖资源站</a></li>
+      <li><a href="http://jx.a456.top">零玖解析站</a></li>
+      <!-- Add more tech-related links here -->
+    </ul>
+    <h2>外部站</h2>
+    <ul>
+      <li><a href="https://ai.caifree.com/">chatgpt</a></li>
+      <!-- Add more news-related links here -->
+    </ul>
+    <h2>快捷搜索</h2>
+    <label for="urlInput"></label>
+    <input type="text" id="urlInput" placeholder="">
+    <button onclick="goToURL()">搜索</button>
+  </div>
+  <script>
+    function goToURL() {
+      var inputElement = document.getElementById("urlInput");
+      var url = inputElement.value.trim(); // 获取输入框中的值，并去除首尾空格
+      // 确保输入的值不为空
+      if (url !== "") {
+          url = "https://www.baidu.com/s?wd=" + url;
+        // 跳转到输入的网址
+        window.open(url, "_blank")
+      } else {
+        alert("请输入有效内容！");
+      }
+    }
+  </script>
+</body>
+</html>
+</body>
+</html>
